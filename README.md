@@ -46,7 +46,7 @@ Sistem Point of Sale (POS) Indonesia yang dirancang untuk bisnis retail dan toko
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/kasir.git
+   git clone https://github.com/Arthur-pendragon1/kasir.git
    cd kasir
    ```
 
