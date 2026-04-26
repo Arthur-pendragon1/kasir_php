@@ -1,0 +1,91 @@
+/* Shared custom theme for POS Enterprise */
+:root {
+    color-scheme: light;
+    font-family: 'Inter', sans-serif;
+    --bg: #eef2ff;
+    --surface: #ffffff;
+    --surface-alt: #f8fafc;
+    --text: #0f172a;
+    --muted: #475569;
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --danger: #dc2626;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top left, rgba(79,70,229,0.08), transparent 30%),
+                linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+    color: var(--text);
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+.card {
+    background: var(--surface);
+    box-shadow: 0 18px 55px rgba(15, 23, 42, 0.08);
+}
+
+.sidebar {
+    background: linear-gradient(180deg, rgba(30,41,59,1) 0%, rgba(15,23,42,1) 100%);
+}
+
+.sidebar a {
+    transition: background .2s ease, transform .2s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(2px);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.table-zebra tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.input-group {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.input-group input,
+.input-group select {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-soft {
+    background: rgba(79, 70, 229, 0.08);
+    color: var(--text);
+}
+
+.page-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
